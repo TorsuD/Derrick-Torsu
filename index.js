@@ -46,28 +46,3 @@ app.get("/GetNSPData/Karen", (req, res) => {
 app.get("/GetNSPData/Dennis", (req, res) => {
   res.json(NSP.Dennis);
 });
-
-app.get("/GetNSPData/:name", (req, res) => {
-  //   let i = req.params.name;
-  const entries = Object.entries(NSP);
-  const values = Object.values(entries);
-
-  //   res.json(values[i][1]);
-  //   res.json("Hello there");
-  //   if (res.params.name ===  ) {
-  res.json(values[0]);
-  console.log(values[2][0]);
-  //   console.log(values[[0]]);
-  //   }
-
-  if (values[i][0].includes(req.params.name) === req.params.name && true) {
-    res.json("True");
-    console.log(True);
-  }
-
-  console.log(NSP.Ivan);
-
-  //   const arr = ["Ivan", "Derrick"];
-  //   const truth = arr.includes("Ivans");
-  //   console.log(truth);
-});
